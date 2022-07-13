@@ -1,0 +1,26 @@
+<!-- <div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div> -->
+
+
+  <div class="row mt-5">
+    <div class="col-md-4 mb-3" *ngFor="let vent of events">
+        <div class="card text-center">
+            <div class="card-body">
+                <h3 class="card-title">{{vent.name}}</h3>
+                <p class="card-text">{{vent.id}}</p>
+                <a href="" class="btn btn-primary">Buy Tickets</a>
+            </div>
+
+            <div class="card-footer text-muted">
+                {{vent.date | date: 'shortDate' }}
+            </div>
+
+        </div>
+    </div>
+  </div>
